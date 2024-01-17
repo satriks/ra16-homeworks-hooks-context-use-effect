@@ -18,7 +18,7 @@ interface UserInfo {
         }
     }
 
-export default function UserInfo ({id , isLoading, setLoading}: Props) {
+export default function Details ({id , isLoading, setLoading}: Props) {
     const [info , setInfo] = useState<UserInfo>()
 
     useEffect(() => {

@@ -8,7 +8,7 @@ static getData = async () => {
     return data
 }   
 
-static getUser = async (id) => {
+static getUser = async (id:string) => {
     const data = await axios.get(`https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/hooks-context/use-effect/data/${id}.json`)
     return data
 }

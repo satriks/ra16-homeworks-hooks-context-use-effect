@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react'
 
 import './App.css'
 import DataService from './components/DataService';
-import Users from './components/Users';
-import UserInfo from './components/UserInfo';
+import List from './components/List';
+import Details from './components/Details';
 
 
 
@@ -35,8 +35,8 @@ export function App() {
     
     return (
         <div id="app">
-            <Users data={users} setChecked={setChecked} setLoading={setLoading} checked={checked}/>
-            {checked && <UserInfo id={checked} isLoading={isLoading} setLoading={setLoading} />}
+            <List data={users} setChecked={setChecked} setLoading={setLoading} checked={checked}/>
+            {checked && <Details id={checked} isLoading={isLoading} setLoading={setLoading} />}
         </div>
     );
 }
